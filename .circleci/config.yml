@@ -27,3 +27,13 @@ workflows:
       - despidete:
           requires:
             - saluda
+    workflow3:
+      jobs:
+        - saluda
+        - aproval:
+            type: approval
+            requires:
+             - saluda
+        - despidete
+            requires:
+              - approval
