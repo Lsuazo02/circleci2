@@ -27,7 +27,7 @@ workflows:
       - despidete:
           requires:
             - saluda
-    workflow3:
+   workflow3:
       jobs:
         - saluda
         - aproval:
