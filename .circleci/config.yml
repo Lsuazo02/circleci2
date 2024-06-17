@@ -33,7 +33,7 @@ workflows:
         - aproval:
             type: approval
             requires:
-             - saluda
+               - saluda
         - despidete
             requires:
-              - approval
+               - approval
